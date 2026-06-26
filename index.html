@@ -3,38 +3,175 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vídeo Incorporado</title>
+    <title>História e Biografia do Sport Club Corinthians Paulista</title>
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        * {
+            box-sizing: border-box;
             margin: 0;
+            padding: 0;
         }
-        .video-container {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            color: #111;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid #d4af37;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ccc;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+        section {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
             border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 6px solid #000;
+        }
+        h2 {
+            font-size: 1.8rem;
+            color: #000;
+            margin-bottom: 1.2rem;
+            text-transform: uppercase;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 0.5rem;
+        }
+        p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #333;
+        }
+        .highlight-box {
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 1.5rem;
+            margin: 1.5rem 0;
+            border-radius: 6px;
+        }
+        .highlight-box h3 {
+            margin-bottom: 0.5rem;
+            color: #000;
+        }
+        ul {
+            list-style: none;
+        }
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        ul li::before {
+            content: "🏆";
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        /* Estilo para deixar o vídeo responsivo */
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%; /* Proporção 16:9 */
+            height: 0;
             overflow: hidden;
+            max-width: 100%;
+            margin-top: 1rem;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
+        }
+        .footer-banner {
+            text-align: center;
+            background-color: #000;
+            color: #fff;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+            font-size: 1.1rem;
+        }
+        .footer-banner span {
+            color: #d4af37;
+            font-weight: bold;
         }
     </style>
 </head>
 <body>
 
-    <div class="video-container">
-        <iframe 
-            width="560" 
-            height="315" 
-            src="https://www.youtube.com/embed/b85yPr9nsWo?si=xbaT0_B96uu_8jGm" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-            referrerpolicy="strict-origin-when-cross-origin" 
-            allowfullscreen>
-        </iframe>
-        </div>
+    <header>
+        <h1>Sport Club Corinthians Paulista</h1>
+        <p>"O Clube do Povo" — Fundado em 1º de Setembro de 1910</p>
+    </header>
+
+    <div class="container">
+        
+        <section id="fundacao">
+            <h2>A Fundação e as Origens Populares</h2>
+            <p>O Sport Club Corinthians Paulista foi fundado na noite de 1º de setembro de 1910 por um groupo de cinco operários sob a luz de um lampião, no bairro do Bom Retiro, em São Paulo. Diferente de outros clubes da época, que eram aristocráticos, o Corinthians nasceu do povo e para o povo, aceitando membros de origens humildes, operários e imigrantes.</p>
+        </section>
+
+        <section id="documentario">
+            <h2>Documentário e História</h2>
+            <p>Assista abaixo a um conteúdo em vídeo detalhando momentos marcantes da trajetória e da identidade corinthiana:</p>
+            <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/40lzmB4a6TY?si=Fg3M9FntVbXt_xlb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section id="democracia">
+            <h2>A Democracia Corinthiana</h2>
+            <p>Na década de 1980, o clube liderou a <strong>Democracia Corinthiana</strong>. Liderado por craques como Sócrates, Wladimir e Casagrande, o movimento determinava que todas as decisões do clube seriam tomadas por meio de voto igualitário entre todos. O movimento ultrapassou os gramados e virou símbolo na luta pelas "Diretas Já".</p>
+        </section>
+
+        <section id="conquistas">
+            <h2>Grandes Conquistas</h2>
+            <ul>
+                <li><strong>Bicampeonato Mundial da FIFA (2000, 2012):</strong> Sendo o primeiro campeão mundial de clubes reconhecido pela FIFA.</li>
+                <li><strong>Copa Libertadores da América (2012):</strong> Conquistada de forma invicta em uma campanha histórica.</li>
+                <li><strong>Campeonatos Brasileiros:</strong> Múltiplas conquistas nacionais que reafirmam sua hegemonia.</li>
+                <li><strong>Campeonato Paulista:</strong> O maior detentor de títulos da história da competição estadual.</li>
+            </ul>
+        </section>
+
+        <section id="fiel">
+            <h2>A Fiel Torcida</h2>
+            <p>Uma das maiores e mais apaixonadas torcidas do planeta, famosa por apoiar o time incessantemente.</p>
+            <div class="highlight-box">
+                <h3>A "Invasão Corinthiana" (1976)</h3>
+                <p>Ocorreu na semifinal do Campeonato Brasileiro de 1976, quando mais de 70 mil torcedores corinthianos viajaram ao Rio de Janeiro para lotar o Maracanã contra o Fluminense.</p>
+            </div>
+        </section>
+
+        <section id="patrimonio">
+            <h2>A Neo Química Arena</h2>
+            <p>Em 2014, o Corinthians inaugurou sua arena moderna localizada em Itaquera, Zona Leste de São Paulo. O estádio foi o palco de abertura da Copa do Mundo da FIFA de 2014.</p>
+        </section>
+
+    </div>
+
+    <div class="footer-banner">
+        <p>"Louco por ti, Corinthians!" — <span>Vai Corinthians!</span></p>
+    </div>
 
 </body>
 </html>
